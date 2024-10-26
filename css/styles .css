@@ -8,7 +8,9 @@
 :root {
     --bg-body: #242a32;
     --color-primary: #131219;
-    --test--color: #f4f3f3;
+    --text--color: #f4f3f3;
+    --text-form: #92929d;
+    --star-yellow: #ffbb3a;
 }
 
 html,
@@ -60,11 +62,11 @@ nav a{
 }
 
 .card-movies {
-    width: 350spx;
+    width: 100%;
     /* height: 400px; */
 }
 
-#card-movies-list {
+#card-movies-list{
     padding: 40px 10px;
 }
 
@@ -77,7 +79,7 @@ nav a{
     height: 220px;
     padding: 10px 0 20px 0;
     background-color: var(--color-primary);
-    color: var(--test--color);
+    color: var(--text--color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,15 +98,79 @@ nav a{
     width: 150px;
     height: 50px;
     background-color: var(--bg-body);
-    color: var(--test--color);
+    color: var(--text--color);
     font-size: 16px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    border: 0;
 }
 
 .movies-btn:hover{
-    background-color: rgb(183, 0, 255);
+    background-color: rgb(59, 59, 59);
+}
+
+.score-container{
+    padding: 40px 0;
+    max-width: 400px;
+}
+
+.card-score-description{
+    background-color: var(--color-primary);
+    color: var(--text--color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.movies-form-btn{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movies-form-group{
+    margin-bottom: 20px;
+}
+
+.movies-form-group label{
+    font-size: 12px;
+    color: var(--text-form);
+}
+
+.card-score-description h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.movies-card-description-star{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.movies-card-description-star h4{
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.movies-card-description-star img{
+    width: 22px;
+    margin-bottom: 10px;
+}
+
+.movies-card-description-star p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-form);
+    margin-bottom: 10px;
 }
